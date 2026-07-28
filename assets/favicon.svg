@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="100%" height="100%">
+  <defs>
+    <style>
+      /* الستايل الافتراضي (Light Mode) */
+      .bg { fill: #0f172a; rx: 16px; }
+      .prompt { fill: #38bdf8; stroke: #38bdf8; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+      .cursor { fill: #22c55e; }
+
+      /* الاستجابة للـ Dark Mode */
+      @media (prefers-color-scheme: dark) {
+        .bg { fill: #1e293b; }
+        .prompt { fill: #38bdf8; stroke: #38bdf8; }
+        .cursor { fill: #4ade80; }
+      }
+    </style>
+  </defs>
+
+  <!-- خلفية المربع بحواف دائرية -->
+  <rect class="bg" width="64" height="64" />
+
+  <!-- سهم الترمينال > -->
+  <path class="prompt" d="M16 20 L30 32 L16 44" fill="none" stroke-width="6" />
+
+  <!-- خط الترمينال _ -->
+  <rect class="cursor" x="34" y="38" width="16" height="6" rx="2" />
+</svg>
